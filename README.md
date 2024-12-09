@@ -1,10 +1,14 @@
+# pizza-stack
+
 # Credentials
 user: admin
 password : root
+## info
 
-# pizza-stack
-
-This template should help get you started developing with Vue 3 in Vite.
+i have Created this project using the following technologies as discussed with people at your organisation and after reading the project document
+1. vue 3
+2. vuetify 3
+3. vuex 4
 
 ## Recommended IDE Setup
 
