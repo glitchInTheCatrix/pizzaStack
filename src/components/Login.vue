@@ -1,36 +1,37 @@
 <template>
-  <v-container class="d-flex justify-center align-center" style="height: 100vh;">
-    <v-row justify="center" align="center" class="pa-4">
-      <v-col cols="12" md="8" lg="6">
-     
-    <v-card class="pa-5" outlined>
-      <v-card-title class="text-center">Login</v-card-title>
-      <v-form @submit.prevent="handleLogin">
-        <v-text-field
-          v-model="username"
-          label="Username"
-          type="text"
-          outlined
-          dense
+  <v-container class="bg-background fill-height flex-column" fluid>
+    <h1 class="text-center text-primary">
+      Pizza Stack
+    </h1>
+<v-col >
 
-          required
-        />
-        <v-text-field
-          v-model="password"
-          label="Password"
-          type="password"
-          outlined
-          dense
-          required
-        />
-        <v-btn type="submit" color="primary" block class="mt-4">Login</v-btn>
-        <v-alert v-if="error" type="error" class="mt-4" dismissible>
-          {{ error }}
-        </v-alert>
-      </v-form>
-    </v-card>
-      </v-col>
-     </v-row>
+  <v-card fluid color="secondary" class="pa-5" outlined>
+    <v-card-title class="text-center">Login</v-card-title>
+    <v-form @submit.prevent="handleLogin">
+      <v-text-field
+        v-model="username"
+        label="Username"
+        type="text"
+        outlined
+        dense
+
+        required
+      />
+      <v-text-field
+        v-model="password"
+        label="Password"
+        type="password"
+        outlined
+        dense
+        required
+      />
+      <v-btn type="submit" color="primary" block class="mt-4">Login</v-btn>
+      <v-alert v-if="error" type="error" class="mt-4" dismissible>
+        {{ error }}
+      </v-alert>
+    </v-form>
+  </v-card>
+</v-col>     
   </v-container>
 </template>
 
@@ -65,7 +66,5 @@ export default {
 </script>
 
 <style scoped>
-.error {
-  color: red;
-}
+
 </style>

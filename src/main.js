@@ -8,6 +8,18 @@ import * as directives from 'vuetify/directives'
 const vuetify = createVuetify({
     components,
     directives,
+    theme:{
+      themes:{
+        light:{
+          colors:{
+            primary:'#132a13',
+            secondary:'#ecf39e',
+            error:'#941b0c',
+            background:'#31572c',
+          }
+        }
+      }
+    }
   })
 
 import App from './App.vue'

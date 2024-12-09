@@ -1,21 +1,21 @@
 <template>
-  <v-container>
-    <v-row class="mb-2">
+  <v-container class="bg-primary" fluid>
+    <v-row class="mb-2" >
       <v-btn @click="logout">Logout</v-btn>
     </v-row>
     <v-row class="mb-2">
       <v-col cols="12" md="3" v-for="card in statusCards" :key="card.title">
-        <v-card class="pa-4" outlined>
+        <v-card class="pa-4 bg-secondary" outlined>
           <v-card-title class="text text-center">{{ card.title }}</v-card-title>
           <v-card-subtitle class="text-h4 text-center">{{ card.count }}</v-card-subtitle>
         </v-card>
       </v-col>
     </v-row>
 
-    <v-card>
+    <v-card class="bg-background">
       <v-card-title>Orders Dashboard</v-card-title>
       <v-card-text>
-        <v-data-table :headers="headers" :items="paginatedOrders" class="elevation-1" dense>
+        <v-data-table :headers="headers" :items="paginatedOrders" class="elevation-1 bg-secondary" dense>
           
 
           <template v-slot:[`item.actions`]="{ item }">
