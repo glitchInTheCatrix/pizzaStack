@@ -47,8 +47,8 @@ export default {
     const store = useStore();
 
     const handleLogin = () => {
-      const hardcodedUsername = "user";
-      const hardcodedPassword = "password";
+      const hardcodedUsername = "admin";
+      const hardcodedPassword = "root";
       const fakeToken = "authToken";
 
       if (username.value === hardcodedUsername && password.value === hardcodedPassword) {
