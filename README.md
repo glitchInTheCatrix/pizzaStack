@@ -1,5 +1,8 @@
 # pizza-stack
 
+## screenshots
+![Login page](image.png)
+![Dashboard](image-1.png)
 # Credentials
 user: admin
 password : root
